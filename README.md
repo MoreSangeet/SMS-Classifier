@@ -1,6 +1,6 @@
 # SMS-Classifier
 
-The SMS Classifier project is an internship project aimed at developing a robust machine learning model for classifying Short Message Service (SMS) messages into predefined categories. The goal is to create an efficient and accurate system that can distinguish between different types of SMS, such as spam and non-spam (ham).
+The SMS Classifier project is an internship project aimed at developing a robust machine learning model for classifying Short Message Service (SMS) messages into predefined categories. The goal is to create an efficient and accurate system that can distinguish between different types of SMS, such as spam and non-spam (ham). 
 
 Project Objectives :-
 *Text Preprocessing: Implement a thorough text preprocessing pipeline to clean and prepare the SMS data for model training.
