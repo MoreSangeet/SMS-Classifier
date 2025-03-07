@@ -10,3 +10,4 @@ Project Objectives :-
 
 Dataset :-
 The project utilizes a dataset containing labeled SMS messages. The dataset is divided into training and testing sets to facilitate model development and evaluation.
+       
