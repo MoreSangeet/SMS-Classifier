@@ -67,7 +67,7 @@ Here are some evaluation results:
 ## How to Run
 1. Clone this repository to your local machine.
 2. Install the required libraries:
-3. Run the Jupyter notebook (`spam_classifier.ipynb`) to see the results and model evaluation.
+3. Run the Jupyter notebook (`sms-spam-detection.ipynb`) to see the results and model evaluation.
 
 ## Acknowledgments
 
