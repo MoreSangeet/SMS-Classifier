@@ -32,6 +32,24 @@ The dataset has the following columns:
 - `target`: 1 for spam, 0 for ham.
 - `text`: The content of the message.
 
+### Dataset Sample:
+Here is a preview of a few rows from the dataset:
+
+| Label | Message                                                                                 |
+|-------|-----------------------------------------------------------------------------------------|
+| ham   | Go until jurong point, crazy.. Available only in bugis n great world la e buffet...     |
+| ham   | Ok lar... Joking wif u oni...                                                           |
+| spam  | Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121... |
+| ham   | U dun say so early hor... U c already then say...                                       |
+| ham   | Nah I don't think he goes to usf, he lives around here though                           |
+| spam  | FreeMsg Hey there darling it's been 3 week's now and no word back! I'd like some fun... |
+| ham   | Even my brother is not like to speak with me. They treat me like aids patent.           |  
+
+In this dataset:
+- **ham**: Non-spam messages (e.g., social messages, personal conversations).
+- **spam**: Spam messages (e.g., promotions, scams, unwanted advertisements).
+
+
 ## Steps Involved
 ### 1. **Data Cleaning**
 - Removing irrelevant columns and renaming necessary columns for clarity.
