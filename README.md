@@ -1,12 +1,74 @@
-# SMS-Classifier
+# Spam Message Classification
 
-The SMS Classifier project is an internship project aimed at developing a robust machine learning model for classifying Short Message Service (SMS) messages into predefined categories. The goal is to create an efficient and accurate system that can distinguish between different types of SMS, such as spam and non-spam (ham). 
+---
 
-Project Objectives :-
-*Text Preprocessing: Implement a thorough text preprocessing pipeline to clean and prepare the SMS data for model training.
-*Machine Learning Models: Develop and evaluate multiple machine learning models for SMS classification. This may include traditional models like Naive Bayes and more advanced models like neural networks.
-*Evaluation Metrics: Assess the performance of the models using standard metrics such as accuracy, precision, recall, and F1 score.
-*API Implementation: Build an API to facilitate easy integration of the trained model for making predictions.
+## Overview
+This project is aimed at building a spam message classifier using machine learning. The goal is to classify messages as either "ham" (non-spam) or "spam" (unwanted messages). The classification model is built using various machine learning algorithms and natural language processing techniques.
 
-Dataset :-
-The project utilizes a dataset containing labeled SMS messages. The dataset is divided into training and testing sets to facilitate model development and evaluation.
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Technologies Used](#technologies-used)
+3. [Dataset](#dataset)
+4. [Steps Involved](#steps-involved)
+5. [Model Evaluation](#model-evaluation)
+6. [How to Run](#how-to-run)
+
+## Project Description
+This project is a spam message classification system. Using a dataset of labeled messages, we build a machine learning model to identify whether a message is spam or ham. Various preprocessing techniques like tokenization, stopword removal, and stemming are applied to prepare the text for machine learning models.
+
+## Technologies Used
+- **Python**: Programming language used for this project.
+- **Pandas**: For data manipulation and analysis.
+- **Numpy**: For numerical computations.
+- **Sklearn**: For machine learning models and preprocessing.
+- **Matplotlib & Seaborn**: For data visualization.
+- **NLTK**: For natural language processing tasks like tokenization and stopword removal.
+- **WordCloud**: To generate word clouds for data visualization.
+
+## Dataset
+The dataset used in this project is called **spam.csv**, which contains text messages and their respective labels (spam or ham).
+
+The dataset has the following columns:
+- `target`: 1 for spam, 0 for ham.
+- `text`: The content of the message.
+
+## Steps Involved
+### 1. **Data Cleaning**
+- Removing irrelevant columns and renaming necessary columns for clarity.
+
+### 2. **Exploratory Data Analysis (EDA)**
+- Analyzing the distribution of spam and ham messages.
+- Adding features like the number of characters, words, and sentences in each message.
+
+### 3. **Data Preprocessing**
+- Converting text to lowercase.
+- Tokenizing the text and removing special characters, stopwords, and punctuation.
+- Stemming words to their root form.
+
+### 4. **Model Building**
+- Using multiple machine learning algorithms like **Naive Bayes**, **Logistic Regression**, **SVM**, and **Random Forest** to train and evaluate the model.
+  
+### 5. **Model Evaluation**
+- The models are evaluated using **accuracy**, **precision**, and **confusion matrix** to assess the performance.
+
+## Model Evaluation
+The model is evaluated based on:
+- **Accuracy**: Percentage of correct predictions.
+- **Precision**: Percentage of relevant results among the retrieved instances.
+
+Here are some evaluation results:
+
+| Model            | Accuracy   | Precision   |
+|------------------|------------|-------------|
+| **MultinomialNB**| 97.2%      | 100%        |
+| **BernoulliNB**  | 98.3%      | 99.2%       |
+| **SVC**          | 86.6%      | 0% (Precision issue with SVC) |
+
+## How to Run
+1. Clone this repository to your local machine.
+2. Install the required libraries:
+3. Run the Jupyter notebook (`spam_classifier.ipynb`) to see the results and model evaluation.
+
+## Acknowledgments
+
+Thank you for exploring this project! If you found this repository helpful or interesting, please consider giving it a ⭐. Contributions, suggestions, and improvements are always welcome. Feel free to open an issue or submit a pull request.
